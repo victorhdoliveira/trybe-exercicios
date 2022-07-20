@@ -1,0 +1,24 @@
+h1 { 
+    size: 65px;
+    color: orange;
+    font-family: sans-serif;
+}
+
+body {
+font-size: 16px;
+background-color: azure;
+text-align: center;
+}
+
+p {
+font-weight: 600;
+font-size: 3em;
+font-style: italic;
+
+}
+
+
+#pul {background-color: gainsboro;}
+#Yellow {color: yellow;}
+#Red {color: red}
+#Brown {color: burlywood;}
