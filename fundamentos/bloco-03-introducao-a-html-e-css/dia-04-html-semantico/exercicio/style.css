@@ -1,0 +1,60 @@
+header {
+    font-size: 40px;
+    background-color: aquamarine;
+    padding:  15px;
+    font-style: oblique;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow:hidden;
+    background-color:rgb(38, 139, 139);
+    margin: 0%;
+}
+
+nav ul li{
+    float:left;
+    padding: 15px;
+    color: aliceblue;
+}
+li:hover {
+    color: #111;
+}
+
+body{
+    background-color: rgb(222, 248, 248);
+}
+
+section{
+    text-align: justify;
+    width: 800px;
+    font-size: 18px;
+}
+
+
+main article section ul {
+    list-style: none;
+    display:inline;
+    position: absolute;
+    top: 280px;
+}
+
+#taxonomia{
+    position: absolute;
+    font-size: 14px;
+    text-align: center;
+    top:315px;
+}
+
+#img1{
+    width: 300px;
+    left: 350px;
+    position: relative;
+    top: 30px;
+}
+
+#img2{ 
+    position: relative;
+    left: 150px;
+}
+
