@@ -77,3 +77,31 @@ console.log (lista);
 let div2 = 1/2
 for (let index = 0; index < lista.length; index += 1) {
     lista[index]*div2 }
+
+// Bonus
+
+//1
+
+for (let index = 1; index < numbers.length; index += 1) {
+  for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+    if (numbers[index] < numbers[secondIndex]) {
+      let position = numbers[index];
+      numbers[index] = numbers[secondIndex];
+      numbers[secondIndex] = position;
+    }
+  }
+}
+console.log(numbers);
+
+//2
+for (let index = 1; index < numbers.length; index += 1) {
+  for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+    if (numbers[index] > numbers[secondIndex]) {
+      let position = numbers[index];
+      numbers[index] = numbers[secondIndex];
+      numbers[secondIndex] = position;
+    }
+  }
+}
+
+console.log(numbers);
