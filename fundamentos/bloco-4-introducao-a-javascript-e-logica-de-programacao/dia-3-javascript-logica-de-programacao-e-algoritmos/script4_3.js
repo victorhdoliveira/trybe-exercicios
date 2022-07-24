@@ -42,3 +42,28 @@ console.log(menorPalavra);
 
 //4
 
+
+//Bonus
+let n = 5;
+let ast = '*';
+let sqr = '';
+
+//1
+
+for (let index = 0; index < n; index += 1){
+    sqr += ast
+}
+
+for (let index = 0; index < n; index += 1){
+    console.log(sqr)
+}
+
+//2
+
+for (let index = 0; index < n; index += 1){
+    sqr += ast
+console.log(sqr)
+}
+
+//3
+
