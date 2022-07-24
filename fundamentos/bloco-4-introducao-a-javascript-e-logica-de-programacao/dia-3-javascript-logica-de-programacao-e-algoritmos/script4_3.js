@@ -20,20 +20,20 @@ console.log (reverse)
 
 //3
 
-let array = ['java', 'javascript', 'python', 'html', 'css'];
-let maiorPalavra = array[0];
-let menorPalavra = array [0];
+let numbers = ['java', 'javascript', 'python', 'html', 'css'];
+let maiorPalavra = numbers[0];
+let menorPalavra = numbers [0];
 
-for (let index = 0; index < array.length; index += 1){
-    if (array[index].length > maiorPalavra.length){
-        maiorPalavra = array[index];
+for (let index = 0; index < numbers.length; index += 1){
+    if (numbers[index].length > maiorPalavra.length){
+        maiorPalavra = numbers[index];
     }
 }
 console.log(maiorPalavra);
 
-for (let index = 0; index < array.length; index +=1){
-    if (array[index].length < menorPalavra.length){
-        menorPalavra = array[index];
+for (let index = 0; index < numbers.length; index +=1){
+    if (numbers[index].length < menorPalavra.length){
+        menorPalavra = numbers[index];
 
     }
 }
