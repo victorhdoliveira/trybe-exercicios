@@ -100,10 +100,84 @@ friday.addEventListener('click', function(){
      } else {
       getFriday[index].innerHTML = arr[index]
     }
-}
+  }
 }
 )}
-    
+
 
 let fridayDays = [4, 11, 18, 25]
 sexxtou(fridayDays)
+
+//6
+
+function zoomIn (){
+  let zoom1 = document.querySelector('#days')
+  zoom1.addEventListener('mouseover', function(event){
+    event.target.style.fontSize = '25px'
+    event.target.style.fontWeight = '500';
+})
+}
+
+function zoomOut (){
+  let zoom1 = document.querySelector('#days')
+  zoom1.addEventListener('mouseout', function(event){
+    event.target.style.fontSize = '20px'
+    event.target.style.fontWeight = '200';
+})
+}
+
+zoomIn();
+zoomOut();
+
+//7
+function task(taskName){
+let task1 = document.querySelector('.my-tasks')
+let createTask = document.createElement('span')
+
+createTask.innerHTML = taskName;
+task1.appendChild(createTask)
+}
+
+task('Codar')
+
+//8
+
+function closeCaption(backGcolor){
+  let cC = document.querySelector('.my-tasks')
+  let createCc = document.createElement('div')
+
+  createCc.style.backgroundColor = backGcolor;
+  cC.appendChild(createCc);
+}
+
+closeCaption('darkgreen')
+
+//9
+
+function selectTask(){
+  let taskslection = document.querySelector('task selected')
+  let task2 = document.createElement('task');
+  task2.addEventListener('click', function(event){
+    if (taskslection.length === 0){
+      event.target.className = 'task selected';
+    } else { 
+      event.target.className = 'task'
+    }
+  })
+}
+selectTask()
+
+//10
+
+function colorDay(){
+  let taskslection = document.querySelector('task selected');
+  let daysOfMonth = document.querySelector('#days');
+  let task2 = document.createElement('task');
+  let taskColor = task2.style.backgroundColor; 
+  
+  daysOfMonth.addEventListener('click', function(event){ 
+    event.target.style.color = 'pink)'
+  });
+  }
+
+colorDay()
