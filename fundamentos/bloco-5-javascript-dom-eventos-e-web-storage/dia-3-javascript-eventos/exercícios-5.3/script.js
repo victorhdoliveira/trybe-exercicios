@@ -167,17 +167,3 @@ function selectTask(){
 }
 selectTask()
 
-//10
-
-function colorDay(){
-  let taskslection = document.querySelector('task selected');
-  let daysOfMonth = document.querySelector('#days');
-  let task2 = document.createElement('task');
-  let taskColor = task2.style.backgroundColor; 
-  
-  daysOfMonth.addEventListener('click', function(event){ 
-    event.target.style.color = 'pink)'
-  });
-  }
-
-colorDay()
