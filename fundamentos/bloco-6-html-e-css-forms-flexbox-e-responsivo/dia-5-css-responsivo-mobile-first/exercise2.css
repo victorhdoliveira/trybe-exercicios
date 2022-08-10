@@ -1,0 +1,92 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+    background-color: rgb(218, 213, 213);
+  }
+
+p{
+    padding: 0 7px;
+}
+
+.container {
+    display: flex;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+}
+
+.list{
+    list-style: none;
+}
+
+/* iphone 12 pro */
+@media (max-width: 600px){
+    .container {
+        flex-direction: column;
+   }
+    h1{
+        font-size: larger;
+        display: flex;
+        justify-content: center;
+    }
+    header p{
+        display: flex;
+        justify-content: center  
+    }
+  
+    h2{
+        font-size: larger;
+        margin-left: 5px;
+    }
+    footer{
+        font-size: small;
+    }
+}
+/* iPad Air */
+@media (min-width: 600px){
+    .container {
+        flex-direction: column;
+   }
+    h1{
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+   }
+    header p{
+    display: flex;
+    justify-content: center; 
+    font-size: xx-large; 
+    }
+    ul{
+    font-size: larger;
+    }
+   section{
+    display: flex;
+    justify-content: space-around;
+   }
+   h2{
+    display: flex;
+    justify-content: center;
+   }
+   .text{
+    font-size: x-large;
+    margin-left: 5px;
+   }
+}
+
+@media (min-width: 1025px){
+    section{
+        display: block;
+       }
+       h2{
+        display: flex;
+        justify-content:flex-start;
+        padding: 0 30px;
+       }
+}
