@@ -1,3 +1,5 @@
+//Parte I
+
 //1
 const testingScope = escopo => {
     if (escopo === true){
@@ -25,3 +27,17 @@ sortOddsAndEvens(oddsAndEvens)
 
 console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescente!`);
 
+// Parte II
+
+//1
+
+const factorial = (n) => n > 1 ? n* factorial(n - 1) : 1
+console.log(factorial(4))
+
+//2
+
+const longestWord = (phrase) => {
+    const biggestLength =  phrase.split(' ').sort((a, b) => b.length - a.length)[0]
+    console.log(biggestLength)
+}
+longestWord("Viver é partir voltar e repartir")
