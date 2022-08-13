@@ -41,3 +41,26 @@ const longestWord = (phrase) => {
     console.log(biggestLength)
 }
 longestWord("Viver é partir voltar e repartir")
+
+//3
+const countBtn = document.getElementById('btn')
+const clickCount = document.getElementById('clicks')
+let count = 0
+
+countBtn.addEventListener("click", () => {clickCount.innerHTML = ++count})
+
+//4
+
+const substituaX = (nome) => {
+  let frase = "Tryber x aqui!"
+  const novaFrase = frase.replace(/x/g, nome)
+  return novaFrase
+}
+
+const minhasSkills = (str) => {
+  const skills = ["HTML", "CSS", "JavaScript"]
+  let phrase = `${str}\nMinhas três principais habilidades são: ${skills[0]}, ${skills[1]} e ${skills[2]}`
+  console.log (phrase)
+}
+minhasSkills(substituaX('bebeto'))
+
